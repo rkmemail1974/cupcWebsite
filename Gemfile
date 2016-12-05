@@ -1,5 +1,15 @@
 source 'http://rubygems.org'
 
+gem 'protected_attributes'
+
+gem 'rspec-rails'
+
+gem 'bcrypt-ruby'
+
+gem 'factory_girl_rails'
+
+gem 'rails_12factor'
+
 gem 'bootstrap-sass'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'
@@ -35,6 +45,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
+
+  gem 'annotate'
 end
 
 group :development do
