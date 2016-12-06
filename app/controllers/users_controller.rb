@@ -12,7 +12,8 @@ class UsersController < ApplicationController
   def create
   	@user = User.new(params[:user])
   	if @user.save
-  		#handle successful save
+      flash[:success] = "Welcome to the CUPC App!"
+  		redirect_to @user
   	else
   		render 'new'
   	end
