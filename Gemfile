@@ -2,6 +2,8 @@ source 'http://rubygems.org'
 
 ruby '2.2.4'
 
+gem 'bootstrap-will_paginate'
+
 gem 'faker'
 
 gem 'protected_attributes'
