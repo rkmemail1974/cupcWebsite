@@ -1,5 +1,7 @@
 source 'http://rubygems.org'
 
+ruby '2.2.4'
+
 gem 'protected_attributes'
 
 gem 'rspec-rails'
