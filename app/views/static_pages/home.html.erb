@@ -1,3 +1,18 @@
+<% if signed_in? %>
+	<div class="row">
+		<aside class="span4">
+			<section>
+			<%= render 'layouts/user_info' %>
+			</section>
+			<section>
+			<%= render 'layouts/micropost_form' %>
+			</section>
+		</aside>
+	</div>
+<% else %>
+
+
+
 <div class="center hero-unit">
 
 <h1>Sample CUPC Website!</h1>
@@ -13,3 +28,5 @@ sample application.
 </div>
 
 <%= link_to image_tag("rails.png", alt: "Rails"), 'http://rubyonrails.org/' %>
+
+<% end %>
