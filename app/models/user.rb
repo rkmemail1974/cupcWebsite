@@ -28,6 +28,11 @@ class User < ActiveRecord::Base
 		validates :password_confirmation, presence: true
 
 
+def feed
+	#this is preliminary. Complete with "Following Users"
+	Micropost.where("user_id = ?", id)
+end
+
 private 
 	def create_remember_token
 		self.remember_token = SecureRandom.urlsafe_base64
