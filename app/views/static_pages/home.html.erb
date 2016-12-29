@@ -17,14 +17,25 @@
 <% else %>
 <div class="center hero-unit">
 
-<h1>Sample CUPC Website!</h1>
-<p>Find me in app/views/static_pages/home.html.erb</p>
+<%= image_tag("cupceaster2006", alt: "cupceaster2006") %>
 
-<h2>
-This is the home page for the 
-<a href="http://railstutorial.org/">Ruby on Rails Tutorial</a>
-sample application.
-</h2>
+<h1>Sample CUPC Website!</h1>
+<p>Original CUPC Website at <%= link_to "CUPC", 'http://cupc.org' %></p>
+
+<h2><p>Welcome to the website of </p>
+<p>Christ United Presbyterian Church, PC(USA) </p></h2>
+
+
+<p>We are a diverse, intergenerational Christian faith community that seeks to offer </p>
+<p>opportunities for spiritual growth in our faith journeys. While affirming the importance</p>
+<p>of our Japanese/Japanese American heritage, we are a congregation that also seeks to </p>
+<p>embrace imagination and creativity to spiritually empower all who come. </p>
+<br>
+<p>We are glad that you have visited us. Please feel free to contact us with any questions and</p><p>or comments. Blessings, and thank you!</p>
+
+<h4>
+Register to join our online community!
+</h4>
 
 <%= link_to "Sign up now!", signup_path, class: "btn btn-alrge btn-primary" %>
 </div>
